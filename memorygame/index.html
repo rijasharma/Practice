@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, rgb(136, 87, 87), rgb(77, 77, 47));
+        }
+
+        h1 {
+
+            text-align: center;
+        }
+
+        #grid {
+            display: flex;
+            height: 600px;
+            width: 1200px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: rgb(59, 122, 104);
+            margin: 0 auto;
+        }
+
+        .squares {
+            width: 200px;
+            height: 200px;
+        }
+
+        @media (max-width: 800px) {
+            .squares {
+                width: 400px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .squares {
+                width: 600px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Memory game</h1>
+    <div id="grid"></div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
